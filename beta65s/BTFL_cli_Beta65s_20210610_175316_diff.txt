@@ -1,0 +1,130 @@
+diff
+
+# version
+# Betaflight / STM32F411 (S411) 4.2.9 Apr 27 2021 / 19:33:23 (e097f4ab7) MSP API: 1.43
+# config: manufacturer_id: MTKS, board_name: MATEKF411RX, version: ee671311, date: 2019-10-16T11:49:37Z
+
+# start the command batch
+batch start
+
+board_name MATEKF411RX
+manufacturer_id MTKS
+
+# name: Beta65s
+
+# feature
+feature -AIRMODE
+feature MOTOR_STOP
+
+# aux
+aux 0 0 0 1300 2100 0 0
+aux 1 1 2 1275 1675 0 0
+aux 2 2 2 1700 2100 0 0
+
+# master
+set gyro_lowpass2_hz = 375
+set dyn_lpf_gyro_min_hz = 300
+set dyn_lpf_gyro_max_hz = 750
+set acc_calibration = -152,65,-218,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rc_interp_int = 10
+set rc_smoothing_type = INTERPOLATION
+set blackbox_device = NONE
+set min_throttle = 1020
+set motor_pwm_rate = 32000
+set bat_capacity = 200
+set vbat_max_cell_voltage = 440
+set vbat_min_cell_voltage = 290
+set vbat_warning_cell_voltage = 310
+set vbat_detect_cell_voltage = 30
+set vbat_scale = 112
+set ibata_scale = 24
+set small_angle = 180
+set osd_warn_link_quality = ON
+set osd_warn_over_cap = ON
+set osd_tim2 = 513
+set osd_vbat_pos = 2403
+set osd_rssi_pos = 2081
+set osd_tim_1_pos = 54
+set osd_tim_2_pos = 2422
+set osd_flymode_pos = 2381
+set osd_throttle_pos = 225
+set osd_vtx_channel_pos = 259
+set osd_crosshairs_pos = 2285
+set osd_ah_sbar_pos = 200
+set osd_ah_pos = 2158
+set osd_current_pos = 385
+set osd_mah_drawn_pos = 353
+set osd_craft_name_pos = 2412
+set osd_gps_speed_pos = 218
+set osd_gps_lon_pos = 82
+set osd_gps_lat_pos = 65
+set osd_gps_sats_pos = 51
+set osd_home_dir_pos = 302
+set osd_home_dist_pos = 303
+set osd_compass_bar_pos = 42
+set osd_altitude_pos = 247
+set osd_pid_roll_pos = 423
+set osd_pid_pitch_pos = 455
+set osd_pid_yaw_pos = 487
+set osd_debug_pos = 1
+set osd_power_pos = 321
+set osd_pidrate_profile_pos = 345
+set osd_warnings_pos = 2186
+set osd_avg_cell_voltage_pos = 2104
+set osd_pit_ang_pos = 33
+set osd_rol_ang_pos = 65
+set osd_battery_usage_pos = 392
+set osd_disarmed_pos = 2315
+set osd_nheading_pos = 311
+set osd_nvario_pos = 279
+set osd_esc_tmp_pos = 82
+set osd_esc_rpm_pos = 83
+set osd_stat_tim_1 = ON
+set osd_stat_max_spd = OFF
+set osd_stat_endbatt = ON
+set osd_stat_min_rssi = OFF
+set osd_stat_max_curr = OFF
+set osd_stat_used_mah = OFF
+set osd_stat_bbox = OFF
+set osd_stat_bb_no = OFF
+set frsky_spi_tx_id = 101,29
+set frsky_spi_offset = -26
+set frsky_spi_bind_hop_data = 2,24,46,68,91,112,134,156,178,200,222,9,31,53,75,97,119,141,163,185,207,229,16,38,60,82,104,126,148,170,192,214,1,23,45,67,89,111,133,155,177,199,221,8,30,52,74,0,0,0
+set gyro_1_align_yaw = 1800
+set name = Beta65s
+
+profile 0
+
+# profile 0
+set dyn_lpf_dterm_min_hz = 105
+set dyn_lpf_dterm_max_hz = 255
+set dterm_lowpass2_hz = 225
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 102
+set i_pitch = 153
+set d_pitch = 117
+set f_pitch = 97
+set p_roll = 94
+set i_roll = 145
+set d_roll = 109
+set f_roll = 92
+set p_yaw = 100
+set i_yaw = 153
+set f_yaw = 92
+set d_min_roll = 71
+set d_min_pitch = 78
+
+rateprofile 1
+
+# rateprofile 1
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 75
+
+# end the command batch
+batch end
+
+# 

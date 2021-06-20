@@ -1,0 +1,1 @@
+# Beta65s configuration
