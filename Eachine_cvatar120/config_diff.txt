@@ -24,6 +24,10 @@ feature -AIRMODE
 feature RX_SERIAL
 feature OSD
 
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
 # serial
 serial 2 8192 115200 57600 0 115200
 
@@ -51,7 +55,8 @@ set dyn_lpf_gyro_max_hz = 550
 set acc_calibration = -44,4,-43,1
 set mag_hardware = NONE
 set baro_hardware = NONE
-set serialrx_provider = SBUS
+set rssi_channel = 8
+set serialrx_provider = CRSF
 set blackbox_device = SERIAL
 set min_throttle = 1070
 set dshot_idle_value = 500
@@ -61,17 +66,20 @@ set motor_pwm_rate = 480
 set motor_poles = 12
 set vbat_scale = 112
 set ibata_scale = 279
+set beeper_dshot_beacon_tone = 5
 set yaw_motors_reversed = ON
 set small_angle = 180
 set pid_process_denom = 2
 set osd_vbat_pos = 2402
 set osd_tim_1_pos = 2420
 set osd_vtx_channel_pos = 2452
+set osd_crosshairs_pos = 2253
 set osd_craft_name_pos = 2434
 set osd_avg_cell_voltage_pos = 2412
 set vtx_band = 4
 set vtx_channel = 1
-set vtx_power = 1
+set vtx_power = 4
+set vtx_low_power_disarm = UNTIL_FIRST_ARM
 set vtx_freq = 5658
 set frsky_spi_bind_hop_data = 0,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
 set name = Eachine Cvatar
