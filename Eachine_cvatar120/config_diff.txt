@@ -16,7 +16,7 @@ manufacturer_id EACH
 mcu_id 003b00233338511532343933
 signature 
 
-# name: Eachine Cvatar
+# name: LTD Cvatar
 
 # feature
 feature -RX_PARALLEL_PWM
@@ -92,7 +92,7 @@ set vtx_power = 4
 set vtx_low_power_disarm = UNTIL_FIRST_ARM
 set vtx_freq = 5658
 set frsky_spi_bind_hop_data = 0,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9
-set name = Eachine Cvatar
+set name = LTD Cvatar
 
 profile 0
 
