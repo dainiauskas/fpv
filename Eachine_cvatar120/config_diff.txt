@@ -38,6 +38,12 @@ aux 2 13 2 1300 1700 0 0
 aux 3 28 1 1700 2100 0 0
 aux 4 35 2 1700 2100 0 0
 
+# rxrange
+rxrange 0 988 2011
+rxrange 1 988 2011
+rxrange 2 988 2011
+rxrange 3 988 2011
+
 # vtxtable
 vtxtable bands 5
 vtxtable channels 8
@@ -71,6 +77,8 @@ set ibata_scale = 279
 set beeper_dshot_beacon_tone = 5
 set yaw_motors_reversed = ON
 set small_angle = 180
+set deadband = 3
+set yaw_deadband = 3
 set pid_process_denom = 2
 set osd_vbat_pos = 2402
 set osd_tim_1_pos = 2420
